@@ -13,7 +13,6 @@ func main() {
 
 	fmt.Print("masukkan nama untuk diubah menjadi password : ")
 	fmt.Scanf("%s", &name)
-	fmt.Println(string(name[len(name)-1]))
 	//your code here
 	if len(name) < 5 {
 		fmt.Println("error! name kurang dari 5")
