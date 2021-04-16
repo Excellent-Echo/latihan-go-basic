@@ -4,11 +4,31 @@ import "fmt"
 
 func main() {
 	var (
-		num1, num2 float32
-		method     string
+		num1, num2, result int32
+		method             string
 	)
-	fmt.Print("input calculator : ")
+
+	fmt.Print("Input (angka operator angka) : ")
 	fmt.Scanf("%d %v %d", &num1, &method, &num2)
 
-	//your code here
+	// your code here
+	switch method {
+	case "+":
+		result = num1 + num2
+		fmt.Printf("Hasil penjumlahan: %d", result)
+	case "-":
+		result = num1 - num2
+		fmt.Printf("Hasil pengurangan: %d", result)
+	case "*":
+		result = num1 * num2
+		fmt.Printf("Hasil perkalian: %d", result)
+	case "/":
+		result = num1 / num2
+		fmt.Printf("Hasil Pembagian: %d", result)
+	case "%":
+		result = num1 % num2
+		fmt.Printf("Hasil Modulus: %d", result)
+	default:
+		fmt.Println("format inputan salah")
+	}
 }
