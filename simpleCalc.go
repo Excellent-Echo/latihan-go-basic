@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	var (
-		num1, num2 float32
+		num1, num2 int32
 		method     string
 	)
 	fmt.Print("input calculator : ")
