@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
 	var (
@@ -21,8 +24,8 @@ func main() {
 		result = num1 / num2
 	case "*":
 		result = num1 * num2
-	// case "%":
-	// 	result = num1 % num2
+	case "%":
+		result = math.Mod(num1, num2)
 	default:
 		fmt.Println("error operasi yang dimasukkan salah!")
 	}
