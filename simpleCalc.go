@@ -28,5 +28,4 @@ func main() {
 	} else {
 		fmt.Println("Format yang anda masukkan salah")
 	}
-
 }
