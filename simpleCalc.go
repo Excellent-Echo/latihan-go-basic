@@ -8,7 +8,17 @@ func main() {
 		method     string
 	)
 	fmt.Print("input calculator : ")
-	fmt.Scanf("%d %v %d", &num1, &method, &num2)
+	fmt.Scanf("%b %v %b", &num1, &method, &num2)
 
-	//your code here
+	if method == "+" {
+		fmt.Println(num1 + num2)
+	} else if method == "-" {
+		fmt.Println(num1 - num2)
+	} else if method == "/" {
+		fmt.Println(num1 / num2)
+	} else if method == "%" {
+		fmt.Println(int(num1) % int(num2))
+	} else {
+		fmt.Println("error operasi yang dimasukkan salah!")
+	}
 }
