@@ -7,11 +7,11 @@ import (
 
 func main() {
 	var (
-		num1, num2 float32
+		num1, num2 int
 		method     string
 	)
 	fmt.Print("input calculator : ")
-	fmt.Scanf("%b %v %b", &num1, &method, &num2)
+	fmt.Scanf("%d %v %d", &num1, &method, &num2)
 
 	//your code here
 	var result float32
