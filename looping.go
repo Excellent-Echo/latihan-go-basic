@@ -11,8 +11,6 @@ func main() {
 			fmt.Println("Fuzz")
 		} else if numberLoop % 5 == 0 {
 			fmt.Println("BuzzFuzz")
-		} else {
-			fmt.Println(numberLoop)
 		}
 	}
 }
