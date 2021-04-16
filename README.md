@@ -16,7 +16,7 @@ soal berada di simpleCalc.go
 ```
 
 Mari membuat calculator sederhana ...
-Jadi kamu disuruh membuat kalkulator yang dapat menampung 2 angka dengan tipe data float32 , dan dapat menerima operasi + (penambahan), -  (pengurangan), / (pembagian) , * (perkalian), % (modulus). Kalian harus memunculkan hasil eksekusi sesuai dengan operasi yang dimasukkan, ketika operasi yang dimasukkan salah , tampilkan "error operasi yang dimasukkan salah!"
+Jadi kamu disuruh membuat kalkulator yang dapat menampung 2 angka dengan tipe data minimal int32 , dan dapat menerima operasi + (penambahan), -  (pengurangan), / (pembagian) , * (perkalian), % (modulus). Kalian harus memunculkan hasil eksekusi sesuai dengan operasi yang dimasukkan, ketika operasi yang dimasukkan salah , tampilkan "error operasi yang dimasukkan salah!"
 
 
 ## 3. create Password
