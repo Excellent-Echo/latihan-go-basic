@@ -7,6 +7,7 @@ func main() {
 		num1, num2, result int32
 		method             string
 	)
+
 	fmt.Print("input calculator : ")
 	fmt.Scanf("%d %v %d", &num1, &method, &num2)
 
