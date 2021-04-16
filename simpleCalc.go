@@ -8,7 +8,22 @@ func main() {
 		method     string
 	)
 	fmt.Print("input calculator : ")
-	fmt.Scanf("%d %v %d", &num1, &method, &num2)
+	fmt.Scanf("%b %v %b", &num1, &method, &num2)
 
 	//your code here
+
+	switch method {
+	case "+":
+		fmt.Println(num1 + num2)
+	case "-":
+		fmt.Println(num1 - num2)
+	case "*":
+		fmt.Println(num1 * num2)
+	case "/":
+		fmt.Println(num1 / num2)
+	case "%":
+		fmt.Println(int(num1) % int(num2))
+	default:
+		fmt.Println("error operator yang dimasukkan salah!")
+	}
 }
