@@ -19,12 +19,15 @@ func main() {
 	case "-":
 		result = num1 - num2
 		fmt.Printf("Hasil pengurangan: %d", result)
-	case "x":
+	case "*":
 		result = num1 * num2
 		fmt.Printf("Hasil perkalian: %d", result)
 	case "/":
 		result = num1 / num2
 		fmt.Printf("Hasil Pembagian: %d", result)
+	case "%":
+		result = num1 % num2
+		fmt.Printf("Hasil Modulus: %d", result)
 	default:
 		fmt.Println("Inputan salah")
 	}
