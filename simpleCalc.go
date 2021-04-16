@@ -8,7 +8,7 @@ func main() {
 		method     string
 	)
 	fmt.Print("input calculator : ")
-	fmt.Scanf("%d %v %d", &num1, &method, &num2)
+	fmt.Scanf("%f %v %f", &num1, &method, &num2)
 
 	//your code here
 	var result float32
@@ -21,10 +21,10 @@ func main() {
 		result = num1 / num2
 	case "*":
 		result = num1 * num2
-	// case "%":
-	// 	result = num1 % num2
+	case "%":
+		result = num1 % num2
 	default:
 		fmt.Println("error operasi yang dimasukkan salah!")
 	}
-	fmt.Println("result:", result)
+	fmt.Printf("result: %f\n", result)
 }
