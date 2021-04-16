@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
 func main() {
@@ -14,7 +13,7 @@ func main() {
 	fmt.Scanf("%d %v %d", &num1, &method, &num2)
 
 	//your code here
-	var result float32
+	var result int
 	switch method {
 	case "+":
 		result = num1 + num2
@@ -25,9 +24,9 @@ func main() {
 	case "*":
 		result = num1 * num2
 	case "%":
-		result = math.Mod(num1, num2)
+		result = num1 % num2
 	default:
 		fmt.Println("error operasi yang dimasukkan salah!")
 	}
-	fmt.Printf("result: %f\n", result)
+	fmt.Printf("result: %d\n", result)
 }
