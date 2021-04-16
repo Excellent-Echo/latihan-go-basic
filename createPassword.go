@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"strconv"
+	"strings"
 )
 
 func main() {
@@ -13,18 +15,19 @@ func main() {
 	fmt.Scanf("%s", &name)
 
 	//your code here
-	str := []int32(name)
-	var result []int32
-
-	if len(str) < 5 {
-		"password minimal 5 karekter"
+	if len(name) < 5 {
+		fmt.Println("nama minimal 5 karakter")
+		return
 	}
-	fmt.Printf(len(str))
 
-	// var result string
-	// for i := length; i < 1; i-- {
-	// 	result = name[length]
-	// }
+	firstLetter := strings.ToUpper(string(name[0]))
+	lastLetter := strings.ToUpper(string(name[len(name)-1]))
+	lastPswChar := strconv.Itoa(len(name))
 
-	// fmt.Println(result)
+	var reverseName string
+	for i := len(name) - 1; i >= 0; i-- {
+		reverseName += string(name[i])
+	}
+
+	fmt.Println("Your password:", firstLetter+reverseName+lastLetter+lastPswChar)
 }
