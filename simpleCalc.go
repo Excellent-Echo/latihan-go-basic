@@ -11,4 +11,20 @@ func main() {
 	fmt.Scanf("%d %v %d", &num1, &method, &num2)
 
 	//your code here
+	var result float32
+	switch method {
+	case "+":
+		result = num1 + num2
+	case "-":
+		result = num1 - num2
+	case "/":
+		result = num1 / num2
+	case "*":
+		result = num1 * num2
+	// case "%":
+	// 	result = num1 % num2
+	default:
+		fmt.Println("error operasi yang dimasukkan salah!")
+	}
+	fmt.Println("result:", result)
 }
