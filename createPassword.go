@@ -31,5 +31,5 @@ func main() {
 	fmt.Printf("Result: %s", result+strconv.Itoa(len(name)))
 }
 
-// masukkan nama untuk diubah menjadi password : tarjo
+// masukkan nama untuk diubah menjadi password : TARJO
 // Result: TojratO5
