@@ -8,7 +8,7 @@ func main() {
 		method     string
 	)
 	fmt.Print("input calculator : ")
-	fmt.Scanf("%v %v %v", &num1, &method, &num2)
+	fmt.Scanf("%b %v %b", &num1, &method, &num2)
 
 	//your code here
 
