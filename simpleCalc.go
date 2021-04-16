@@ -22,8 +22,8 @@ func main() {
 		fmt.Println(num1 / num2)
 	} else if method == "%" {
 		fmt.Println(num1 % num2)
-	} //else {
-	//	fmt.Println("error operasi yang dimasukan salah")
-	//}
-	//}
+	} else {
+		fmt.Println("error operasi yang dimasukan salah")
+	}
+
 }
