@@ -11,5 +11,9 @@ func main() {
 	fmt.Scanf("%d %v %d", &num1, &method, &num2)
 
 	//your code here
-	
+
+	switch method{
+	case 1:
+		fmt.Println("hasil: ", num1+num2)
+
 }
