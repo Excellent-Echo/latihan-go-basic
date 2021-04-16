@@ -27,7 +27,7 @@ func main() {
 		hasil = num1 * num2
 		fmt.Printf("Hasil: %d", hasil)
 	default:
-		fmt.Println("input salah")
+		fmt.Println("error operasi yang dimasukkan salah!")
 	}
 
 }
