@@ -10,5 +10,19 @@ func main() {
 	fmt.Print("input calculator : ")
 	fmt.Scanf("%d %v %d", &num1, &method, &num2)
 
-	//your code here
+	switch method {
+	case "+":
+		fmt.Println(num1, " + ", num2, " = ", num1+num2)
+	case "-":
+		fmt.Println(num1, " - ", num2, " = ", num1-num2)
+	case "*":
+		fmt.Println(num1, " * ", num2, " = ", num1*num2)
+	case "/":
+		fmt.Println(num1, " / ", num2, " = ", num1/num2)
+	case "%":
+		fmt.Println(num1, " % ", num2, " = ", (num1 % num2))
+	case "default":
+		fmt.Println("Inputan anda salah, silakan cek kembali!")
+	}
+
 }
