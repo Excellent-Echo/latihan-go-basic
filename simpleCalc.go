@@ -11,4 +11,19 @@ func main() {
 	fmt.Scanf("%d %v %d", &num1, &method, &num2)
 
 	//your code here
+
+	switch method {
+	case "+":
+		fmt.Println(num1 + num2)
+	case "-":
+		fmt.Println(num1 - num2)
+	case "*":
+		fmt.Println(num1 * num2)
+	// case "%":
+	// 	fmt.Println(num1 % num2)
+	case "/":
+		fmt.Println(num1 / num2)
+	default:
+		fmt.Println("Masukan input yang benar, Silahkan coba lagi!")
+	}
 }
