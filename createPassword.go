@@ -11,7 +11,7 @@ func main() {
 		name, reverse string
 	)
 
-	fmt.Print("Enter a name to be changed to a password (min 5 chars): ")
+	fmt.Printf("Enter a name to be changed to a password (min 5 chars): ")
 	fmt.Scanf("%s", &name)
 
 	//your code here
@@ -27,6 +27,6 @@ func main() {
 		}
 
 		result := strings.ToUpper(firstChar) + reverse + strings.ToUpper(lastChar) + amountChar
-		fmt.Println(result)
+		fmt.Println("The password's =", result)
 	}
 }
