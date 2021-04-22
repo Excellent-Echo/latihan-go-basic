@@ -7,7 +7,7 @@ func main() {
 		num1, num2 int
 		method string
 	)
-	fmt.Println("Kalkulator : ")
+	fmt.Printf("Kalkulator : ")
 	fmt.Scanf("%d %v %d", &num1, &method, &num2)
 
 	//your code here
